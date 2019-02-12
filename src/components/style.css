@@ -1,4 +1,3 @@
-
 .HomeUserBackDrop {
   background-image: url("https://s3-eu-west-1.amazonaws.com/fp-img2/img/web/424677960491042.MH2JqBOMHpEvgWv6Np0j_height64028937732.png");
   background-size: cover;
@@ -8,12 +7,10 @@
   padding-top: 20px;
 }
 
-
-.iconColorOutline{
-  color:#ffff00;
+.iconColorOutline {
+  color: #ffff00;
   background-color: #29302d;
-  border:1px solid #ffff00;
-  
+  border: 1px solid #ffff00;
 }
 
 /* slider css */
@@ -72,30 +69,41 @@ h3 {
   background: #101613;
   color:#ffff00;
 } */
- 
-.description{
+
+.description {
   padding: 20px;
   margin: 0;
   background: #101613;
-  color:#ffff00;
+  color: #ffff00;
 }
-.imgprop{
-  
+.imgprop {
   height: 400px;
   /* width:1000px; */
   margin: auto;
- 
 }
-@media (max-width:750px){
-  .imgprop{
-   
+@media (max-width: 750px) {
+  .imgprop {
     height: 250px;
     margin: auto;
- 
   }
-  .description{
+  .description {
     padding: 15px;
     text-align: center;
-    
+  }
+}
+.checked {
+  color: orange;
+}
+.moviePosterImg {
+  height: 260px;
+  width: 100%;
+}
+.CardWidthSmallDevices {
+  width: 12rem;
+}
+
+@media (max-width: 750px) {
+  .CardWidthSmallDevices {
+    width: 9rem;
   }
 }

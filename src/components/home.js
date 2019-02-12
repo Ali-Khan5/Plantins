@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import MoviesList from "./MovieList";
 import {
   changeName,
   GoogleSignin,
@@ -8,22 +9,20 @@ import {
 } from "../store/actions/action";
 import Carousal from "./carousal";
 class Home extends Component {
-  GoogleSignInfunc = () => {
-    console.log("i am running from line 7");
-    this.props.PerformGoogleSignIn();
-  };
-  FBsignInFuc = () => {
-    this.props.PerformFBSignIn();
-  };
+ 
   render() {
     return (
-      <div className="containerlfluid">
-        <div className="row">
-          <div className="col-md-12">
+      <div className="container-fluid">
+        
             <Carousal />
-          </div>
-       
+         
+        <br />
+        <br />
+        <div className="row">
+          <h2> Featured Movies </h2>
         </div>
+
+        <MoviesList />
       </div>
     );
   }
