@@ -1,0 +1,100 @@
+/* #d50000 */
+
+/* navbar styling starts */
+
+/* this controls the size and color of the navbar item i.e home about programs ... */
+.navbar-expand-lg  .navbar-nav > li > a {
+  color: #29302d!important;
+  font-size: 19px;
+  /* padding-top: 45px !important; */
+  font-weight: bold !important;
+}
+/* this changes the hover effect on navbar item */
+.navbar-expand-lg  .navbar-nav > li > a:hover {
+  color: #29302d!important;
+  background-color: #ffff00!important;
+  /* border-bottom: 5px solid;
+  border-bottom-color: #ffff00; */border:2px solid #29302d;
+}
+/* this changes the background color of our programs when clicked  */
+.navbar-expand-lg  .navbar-nav > .open > a {
+  /* background-color: #fffff3 !important; */
+}
+
+
+/* this controls the navbar height  */
+.navbar {
+  
+  min-height: 60px;
+  border-radius: 0px !important;
+  margin: 0px;
+ 
+  background-color: #ffff00;
+}
+/* this controls the dropdown styling */
+.dropdown-menu > li > a {
+  font-size: 23px;
+  color: #29302d!important;
+  background-color: #ffff00;
+}
+/* this  controls the dropdown hover styling  */
+.dropdown-menu > li > a:hover {
+  /* color: white !important;
+  background-color: #566270 !important; */
+  font-size: 25px;
+}
+/* #29302d  */
+/* #ffff00  */
+.navbar-expand-lg  {
+  background-color: #ffff00;
+  border-color: #ffff00 ;
+  color:#29302d;
+}
+.navbar-expand-lg2{
+  background-color: #29302d ;
+  border-color: #29302d;
+  color:#FFFFFF;
+}
+.navbar-expand-lg  .navbar-nav > .active > a,
+.navbar-expand-lg  .navbar-nav > .active > a:focus,
+.navbar-expand-lg  .navbar-nav > .active > a:hover {
+  background-color:#29302d;
+  
+}
+/* navbar styling ends */
+.SearchButtonStyling{
+  border:1px solid #ffff00;
+  color:#ffff00;
+  background-color: #29302d;
+}
+.SearchButtonStyling:hover{
+  
+  color:#29302d;
+  background-color:  #ffff00;
+}
+.navbar-toggler-icon{
+  
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+.togglesIconColor{
+  background-color: #101613 !important;
+}
+.footerNavLink{
+  color:#FFFFFF;
+}
+.footerNavLink:hover{
+  color:#ffff00;
+}
+.headerNavigationGap{
+  margin:0px 30px;
+
+ 
+}
+
+@media (max-width:750px){
+  .headerNavigationGap{
+    margin:0px 0px;
+  
+   
+  }
+}

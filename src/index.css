@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Basic');
+html,body {
+  padding: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+ 
+/* font-family: 'K2D', sans-serif;
+/* font-family: 'Magra', sans-serif;
+font-family: 'Nobile', sans-serif;
+font-family: 'Palanquin Dark', sans-serif;
+font-family: 'Volkhov', serif; */ 
+  
+}
+/* theme : header,footer:#f5f5f5
+body component: #fffff3 
+secondry color:#195693 \\rgb(25, 86, 147) 
+main-heading size :35px
+secondary-heading:30px
+*/
+
+.theme{
+   /* font-family: 'IBM Plex Sans',Arimo,sans-serif; */
+	/* font-size: 14px; */
+	/* color: #333; */
+	background-color: #fffff3 ; /*#E0E3DA; */
+	line-height: 1.735;
+  font-style: normal;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased; */
+}
+
+.fl-page {
+  position: relative;
+  min-height: 100vh;
+  font-family: 'Basic',sans-serif;
+  padding-bottom: 162px; /* Should be equal to the height of your footer */
+}
+.fl-page-footer-wrap {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+ 
+}
+.themeInverse{
+  background-color:   #E0E3DA; 
+  color:#F0F0FC;
+}
+
+/*! Generated using Type Nugget v0.2.6 | typenugget.com */
+/*! Import Foundry Fonts */
+
+
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/*! Start Type Nugget Styles */
+/* 
+body {
+	font-family: 'Arbutus Slab';
+	font-size: 15px;
+	color: #333;
+	background-color: #eff0e6;
+	line-height: 1.735;
+	font-style: normal;
+} */
+
+@media (max-width:750px){
+  .fl-page {
+    padding-bottom: 216px;
+  }
+}
+@media (max-width:768px){
+  .fl-page {
+    padding-bottom: 216px;
+  }
+}
