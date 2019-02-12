@@ -7,7 +7,6 @@ import {
   facebookSignin
 } from "../store/actions/action";
 import Carousal from "./carousal";
-import VerticalCarousal from './VerticalCarousal';
 class Home extends Component {
   GoogleSignInfunc = () => {
     console.log("i am running from line 7");
