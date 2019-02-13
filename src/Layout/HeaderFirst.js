@@ -44,7 +44,7 @@ class HeaderFirst extends Component {
                 data-target="#exampleModal">
               <span
                 style={{
-                  color: "#ffff00 ",
+                  color: "#FF8D1B ",
                   fontSize: "18px",
                   fontWeight: "bold"
                 }}

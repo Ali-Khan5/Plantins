@@ -21,7 +21,7 @@ class Home extends Component {
           <div className="col ">
             <h2
               style={{
-                borderLeft: "8px solid yellow",
+                borderLeft: "8px solid #FF8D1B",
                 padding: "12px",
                 marginLeft: "10px"
               }}
@@ -38,7 +38,7 @@ class Home extends Component {
           <div className="col ">
             <h2
               style={{
-                borderLeft: "8px solid yellow",
+                borderLeft: "8px solid #FF8D1B",
                 padding: "12px",
                 marginLeft: "10px"
               }}

@@ -12,9 +12,9 @@
 /* this changes the hover effect on navbar item */
 .navbar-expand-lg  .navbar-nav > li > a:hover {
   color: #29302d!important;
-  background-color: #ffff00!important;
+  background-color: #FF8D1B!important;
   /* border-bottom: 5px solid;
-  border-bottom-color: #ffff00; */border:2px solid #29302d;
+  border-bottom-color: #FF8D1B; */
 }
 /* this changes the background color of our programs when clicked  */
 .navbar-expand-lg  .navbar-nav > .open > a {
@@ -29,13 +29,13 @@
   border-radius: 0px !important;
   margin: 0px;
  
-  background-color: #ffff00;
+  background-color: #FF8D1B;
 }
 /* this controls the dropdown styling */
 .dropdown-menu > li > a {
   font-size: 23px;
   color: #29302d!important;
-  background-color: #ffff00;
+  background-color: #FF8D1B;
 }
 /* this  controls the dropdown hover styling  */
 .dropdown-menu > li > a:hover {
@@ -44,10 +44,10 @@
   font-size: 25px;
 }
 /* #29302d  */
-/* #ffff00  */
+/* #FF8D1B */
 .navbar-expand-lg  {
-  background-color: #ffff00;
-  border-color: #ffff00 ;
+  background-color: #FF8D1B;
+  border-color: #FF8D1B;
   color:#29302d;
 }
 .navbar-expand-lg2{
@@ -63,14 +63,14 @@
 }
 /* navbar styling ends */
 .SearchButtonStyling{
-  border:1px solid #ffff00;
-  color:#ffff00;
+  border:1px solid #FF8D1B;
+  color:#FF8D1B;
   background-color: #29302d;
 }
 .SearchButtonStyling:hover{
   
   color:#29302d;
-  background-color:  #ffff00;
+  background-color:  #FF8D1B;
 }
 .navbar-toggler-icon{
   
@@ -83,7 +83,7 @@
   color:#FFFFFF;
 }
 .footerNavLink:hover{
-  color:#ffff00;
+  color:#FF8D1B;
 }
 .headerNavigationGap{
   margin:0px 30px;

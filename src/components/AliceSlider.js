@@ -60,7 +60,7 @@ class Gallery extends React.Component {
               className="MainSliderHeight MainSliderStyle"
             
             >
-            <Link to="/detail/Ant-man" style={{color:'#ffff00',textDecoration:'none'}}> 
+            <Link to="/detail/Ant-man" style={{color:'rgb(248, 248, 248)',textDecoration:'none'}}> 
               <BigSlider
                 imgSrc="https://occhimagazine.com/occhi/wp-content/uploads/2018/07/AMTWPoster-1024x576.jpg"
                 Title={"Ant-Man"}
@@ -75,7 +75,7 @@ class Gallery extends React.Component {
             <div
               className="MainSliderHeight MainSliderStyle"
             >
-            <Link to="/detail/infinityWar" style={{color:'#ffff00',textDecoration:'none'}}> 
+            <Link to="/detail/infinityWar" style={{color:'rgb(248, 248, 248)',textDecoration:'none'}}> 
               <BigSlider imgSrc="https://www.syfy.com/sites/syfy/files/styles/1200x680/public/2018/04/avengers_infinity_war_hero_image.jpg" 
               ReleaseDate={'2018'}
               Story={'Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality.'}
@@ -88,7 +88,7 @@ class Gallery extends React.Component {
               className="MainSliderHeight MainSliderStyle"
           
             >
-              <Link to="/detail/MissonImpossibleFallout" style={{color:'#ffff00',textDecoration:'none'}}> 
+              <Link to="/detail/MissonImpossibleFallout" style={{color:'rgb(248, 248, 248)',textDecoration:'none'}}> 
               <BigSlider
               Title={'Mission impossible :Fallout'}
               imgSrc="https://www.thebeaverton.com/wp-content/uploads/2018/07/mission-impossible-fallout.jpg"
@@ -102,7 +102,7 @@ class Gallery extends React.Component {
               className="MainSliderHeight MainSliderStyle"
           
             >
-              <Link to="/detail/ReadyPlayerOne" style={{color:'#ffff00',textDecoration:'none'}}> 
+              <Link to="/detail/ReadyPlayerOne" style={{color:'rgb(248, 248, 248)',textDecoration:'none'}}> 
               <BigSlider 
               Title={'Ready Player One'}
               ReleaseDate={'2018'}
@@ -116,7 +116,7 @@ class Gallery extends React.Component {
               className="MainSliderHeight MainSliderStyle"
         
             >
-              <Link to="/detail/BohemainRhapsody" style={{color:'#ffff00',textDecoration:'none'}}> 
+              <Link to="/detail/BohemainRhapsody" style={{color:'rgb(248, 248, 248)',textDecoration:'none'}}> 
            <BigSlider 
            Title={'Bohemian Rhapsody'}
            ReleaseDate={'2018'}
