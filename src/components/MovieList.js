@@ -5,7 +5,7 @@ const MoviesList = () => {
     <div class="container">
       <div className="row">
         <div className="col-lg-3 col-md-3 col-6 ">
-        <Link to="/detail/Ant-man" style={{color:'black',textDecoration:'none'}}> 
+        <Link to="/detail/Antman" style={{color:'black',textDecoration:'none'}}> 
           <div className="card">
             <img
               className="moviePosterImg "
