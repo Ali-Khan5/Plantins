@@ -1,6 +1,11 @@
 import React from "react";
-
-const Model = () => {
+import { connect } from "react-redux";
+import {
+  changeName,
+  GoogleSignin,
+  facebookSignin
+} from "../store/actions/action";
+const Model = props => {
   return (
     <div
       className="modal fade"
@@ -13,7 +18,11 @@ const Model = () => {
       <div className="modal-dialog" role="document">
         <div className="modal-content">
           <div className="modal-header text-center">
-            <h3  id="exampleModalLabel" className="modal-title w-100 text-center" style={{color:'black'}}>
+            <h3
+              id="exampleModalLabel"
+              className="modal-title w-100 text-center"
+              style={{ color: "black" }}
+            >
               Login
             </h3>
             <button
@@ -26,9 +35,27 @@ const Model = () => {
             </button>
           </div>
           <div className="modal-body">
-          
-          <button type="button" className="btn  btn-lite  btn-block" style={{backgroundColor:'#FFFFFF',color:'grey'}}>Login using Google</button>
-          <button type="button" className="btn  btn-outline-primary btn-block">Login using Facebook</button>
+            <button
+              type="button"
+              data-dismiss="modal"
+              className="btn  btn-lite  btn-block "
+              style={{ backgroundColor: "#FFFFFF", color: "grey" }}
+              onClick={() => {
+                props.PerformGoogleSignIn();
+              }}
+            >
+              Login using Google
+            </button>
+            <button
+              type="button"
+              data-dismiss="modal"
+              className="btn  btn-outline-primary btn-block "
+              onClick={() => {
+                props.PerformFBSignIn();
+              }}
+            >
+              Login using Facebook
+            </button>
           </div>
           <div className="modal-footer">
             <button
@@ -44,4 +71,28 @@ const Model = () => {
     </div>
   );
 };
-export default Model;
+
+function mapStateToProp(state) {
+  return {
+    userName: state.reducer.name,
+    CurrentUser: state.reducer.currentUser
+  };
+}
+function mapDispatchToProp(dispatch) {
+  return {
+    changeUserName: () => {
+      dispatch(changeName());
+    },
+    PerformGoogleSignIn: () => {
+      dispatch(GoogleSignin());
+    },
+    PerformFBSignIn: () => {
+      dispatch(facebookSignin());
+    }
+  };
+}
+
+export default connect(
+  mapStateToProp,
+  mapDispatchToProp
+)(Model);
