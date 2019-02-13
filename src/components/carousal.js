@@ -6,7 +6,7 @@ const BootCarousal = () => {
   return (
     <div
       id="carouselExampleIndicators"
-      className="carousel slide"
+      className="carousel slide  w-100 img-fluid "
       data-ride="carousel"
     >
       <ol className="carousel-indicators">
@@ -20,11 +20,13 @@ const BootCarousal = () => {
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
+        
           <img
-            className="imgprop  d-block w-100 img-fluid"
+            className="imgprop  d-block w-100  "
             src={LogoAnimation}
             alt="First slide"
           />
+         
         </div>
         <div className="carousel-item">
           <CarousalItem

@@ -72,19 +72,19 @@ h3 {
 
 .description {
   padding: 20px;
-  margin: 0;
+  margin: 0px;
   background: #101613;
   color: #ffff00;
 }
 .imgprop {
   height: 400px;
   /* width:1000px; */
-  margin: auto;
+  margin: 0px;
 }
 @media (max-width: 750px) {
   .imgprop {
     height: 250px;
-    margin: auto;
+    margin: 0px;
   }
   .description {
     padding: 15px;
@@ -95,15 +95,37 @@ h3 {
   color: orange;
 }
 .moviePosterImg {
-  height: 260px;
+  min-height: 230px;
+  max-height: 250px;
+  height: 100%;
   width: 100%;
 }
 .CardWidthSmallDevices {
   width: 12rem;
 }
-
+/* this controls the overrall main big slider most popular moves  */
+.MainSliderHeight{
+  height: 350px;
+}
+/* this controls the img size of the img inside big slider  */
+.MainSliderImgSize{
+  
+  height: 350px;
+}
 @media (max-width: 750px) {
   .CardWidthSmallDevices {
     width: 9rem;
   }
+  .MainSliderHeight{
+    height: 100%;
+  }.MainSliderImgSize{
+    height: 100%;
+  
+  }
+}
+
+.MainSliderStyle{
+  background-color: #29302d;
+  color:#ffff00;
+
 }

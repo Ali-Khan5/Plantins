@@ -27,7 +27,7 @@ const Model = () => {
           </div>
           <div className="modal-body">
           
-          <button type="button" className="btn  btn-outline-dark btn-block">Login using Google</button>
+          <button type="button" className="btn  btn-lite  btn-block" style={{backgroundColor:'#FFFFFF',color:'grey'}}>Login using Google</button>
           <button type="button" className="btn  btn-outline-primary btn-block">Login using Facebook</button>
           </div>
           <div className="modal-footer">

@@ -3,10 +3,10 @@ const MoviesList = () => {
   return (
     <div class="container">
       <div className="row">
-        <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <div className="col-lg-3 col-md-3 col-6 ">
           <div className="card">
             <img
-              className="img-fluid moviePosterImg"
+              className="moviePosterImg "
               src="https://images.fandango.com/ImageRenderer/0/0/redesign/static/img/default_poster.png/0/images/masterrepository/other/ant_man_ver5.jpg"
               alt="Card image cap"
             />
@@ -24,10 +24,10 @@ const MoviesList = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-md-3  col-sm-12 col-xs-12">
+        <div className="col-lg-3 col-md-3  col-6">
           <div className="card card-inverse card-primary text-center">
             <img
-              className="img-fluid moviePosterImg"
+              className="moviePosterImg "
               src="https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/88207/90748/Justice-League-Advance-Style-Poster-buy-original-movie-posters-at-starstills__25567.1494429421.jpg?c=2?imbypass=on"
               alt="Card image cap"
             />
@@ -45,10 +45,10 @@ const MoviesList = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-md-3  col-sm-6 col-xs-6">
+        <div className="col-lg-3 col-md-3  col-6">
           <div className="card card-inverse card-success text-center">
             <img
-              className="img-fluid moviePosterImg "
+              className="moviePosterImg  "
               src="http://picpusdan8.free.fr/W/white%20house%20downa.jpg"
               alt="Card image cap"
             />
@@ -66,11 +66,11 @@ const MoviesList = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-md-3  col-sm-6 col-xs-6">
+        <div className="col-lg-3 col-md-3  col-6">
           <div className="card card-inverse card-info text-center">
             <img
-              className="card-img-top moviePosterImg"
-              src="https://i1.wp.com/splashreport.com/wp-content/uploads/2017/05/new-wonderwoman-header-1.jpg?fit=853%2C515"
+              className="moviePosterImg"
+              src="https://images-na.ssl-images-amazon.com/images/I/51B1gYrtW7L._SL500_AC_SS350_.jpg"
               alt="Card image cap"
             />
             <div className="card-block">
@@ -87,10 +87,10 @@ const MoviesList = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-md-3  col-sm-6 col-xs-6">
+        <div className="col-lg-3 col-md-3  col-6">
           <div className="card card-inverse card-info text-center">
             <img
-              className="card-img-top moviePosterImg"
+              className="moviePosterImg "
               src="https://cdn1.thr.com/sites/default/files/2017/12/sarah_paulson_screen_shot_-_every_con_has_its_pros-sq_2017.jpg"
               alt="Card image cap"
             />
@@ -109,10 +109,10 @@ const MoviesList = () => {
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-3  col-sm-6 col-xs-6">
+        <div className="col-lg-3 col-md-3  col-6">
           <div className="card card-inverse card-info text-center">
             <img
-              className="card-img-top moviePosterImg"
+              className="moviePosterImg"
               src="https://lasallefalconer.com/wp-content/uploads/2017/04/share-img-900x473.jpg"
               alt="Card image cap"
             />
@@ -131,10 +131,10 @@ const MoviesList = () => {
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-3  col-sm-6 col-xs-6">
+        <div className="col-lg-3 col-md-3  col-6">
           <div className="card card-inverse card-info text-center">
             <img
-              className="card-img-top moviePosterImg"
+              className="moviePosterImg "
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqZsMTKcFXNzESCQoJfC4zcwMdgft0Y2sxu8QsrIQg7TZOAcN0"
               alt="Card image cap"
             />
@@ -153,10 +153,10 @@ const MoviesList = () => {
           </div>
         </div>
 
-        <div className="col-lg-3 col-md-3  col-sm-6 col-xs-6">
+        <div className="col-lg-3 col-md-3  col-6">
           <div className="card card-inverse card-info text-center">
             <img
-              className="card-img-top moviePosterImg"
+              className="moviePosterImg "
               src="https://image.al.com/home/bama-media/width620/img/entertainment_impact/photo/jw2jpg-3fd0397399ecd913.jpg"
               alt="Card image cap"
             />
