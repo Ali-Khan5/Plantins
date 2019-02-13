@@ -29,7 +29,7 @@ class Routers extends Component {
             <Route exact path="/login" component={Signin} />
             <Route exact path="/contact" component={AboutUs} />
             <Route exact path="/about" component={AboutUs} />
-            <Route exact path="/detail" component={Movie}/>
+            <Route exact path="/detail/:moviename" component={Movie}/>
             <div className="fl-page-footer-wrap">
               <Footer />
             </div>

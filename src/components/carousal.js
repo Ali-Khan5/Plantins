@@ -30,12 +30,14 @@ const BootCarousal = () => {
         </div>
         <div className="carousel-item">
           <CarousalItem
+          Moredetails={'infinityWar'}
             imgsrc="https://i1.wp.com/stlhattrick.com/wp-content/uploads/2018/05/landscape-1522924460-avengers-infinity-war-poster.jpg"
             details="Avengers: Infinity War is a 2018 American superhero film based on the Marvel Comics superhero team the Avengers, produced by Marvel Studiosand distributed by Walt Disney Studios Motion Pictures. It is the sequel to 2012's The Avengers and 2015's Avengers: Age of Ultron, andthe nineteenth film in the Marvel Cinematic Universe (MCU)."
           />
         </div>
         <div className="carousel-item">
           <CarousalItem
+          Moredetails={'Antman'}
             imgsrc="https://occhimagazine.com/occhi/wp-content/uploads/2018/07/AMTWPoster-1024x576.jpg"
             details=" Ant-Man and the Wasp is a 2018 American superhero film based on the
             Marvel Comics characters Scott Lang / Ant-Man and Hope van Dyne /

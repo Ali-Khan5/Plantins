@@ -14,10 +14,12 @@ const CarousalItem =(props)=>{
           <div className="col-md-4 description">
           <p >{props.details}</p>
           <br/>
+          <Link to={"/detail/"+props.Moredetails}>
           <button className="btn btn-warning">
             {" "}
             Click here for more details
           </button>
+          </Link>
           </div>
         </div>
     

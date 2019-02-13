@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 const MoviesList = () => {
   return (
     <div class="container">
       <div className="row">
         <div className="col-lg-3 col-md-3 col-6 ">
+        <Link to="/detail/Ant-man" style={{color:'black',textDecoration:'none'}}> 
           <div className="card">
             <img
               className="moviePosterImg "
@@ -23,8 +25,10 @@ const MoviesList = () => {
               </p>
             </div>
           </div>
+          </Link>
         </div>
         <div className="col-lg-3 col-md-3  col-6">
+        <Link to="/detail/justiceLeague"style={{color:'black',textDecoration:'none'}}> 
           <div className="card card-inverse card-primary text-center">
             <img
               className="moviePosterImg "
@@ -44,8 +48,10 @@ const MoviesList = () => {
               </p>
             </div>
           </div>
+          </Link>
         </div>
         <div className="col-lg-3 col-md-3  col-6">
+        <Link to="/detail/whiteHouseDown" style={{color:'black',textDecoration:'none'}}> 
           <div className="card card-inverse card-success text-center">
             <img
               className="moviePosterImg  "
@@ -65,12 +71,14 @@ const MoviesList = () => {
               </p>
             </div>
           </div>
+          </Link>
         </div>
         <div className="col-lg-3 col-md-3  col-6">
+        <Link to="/detail/wonderWomen"style={{color:'black',textDecoration:'none'}}> 
           <div className="card card-inverse card-info text-center">
             <img
               className="moviePosterImg"
-              src="https://images-na.ssl-images-amazon.com/images/I/51B1gYrtW7L._SL500_AC_SS350_.jpg"
+              src="https://i.pinimg.com/originals/31/95/8d/31958d3dd38ca82ad9a64dd3edacfd2f.jpg"
               alt="Card image cap"
             />
             <div className="card-block">
@@ -86,8 +94,10 @@ const MoviesList = () => {
               </p>
             </div>
           </div>
+          </Link>
         </div>
         <div className="col-lg-3 col-md-3  col-6">
+        <Link to="/detail/oceanEight" style={{color:'black',textDecoration:'none'}}> 
           <div className="card card-inverse card-info text-center">
             <img
               className="moviePosterImg "
@@ -107,9 +117,11 @@ const MoviesList = () => {
               </p>
             </div>
           </div>
+          </Link>
         </div>
 
         <div className="col-lg-3 col-md-3  col-6">
+        <Link to="/detail/HacksawRidge" style={{color:'black',textDecoration:'none'}}> 
           <div className="card card-inverse card-info text-center">
             <img
               className="moviePosterImg"
@@ -129,9 +141,11 @@ const MoviesList = () => {
               </p>
             </div>
           </div>
+          </Link>
         </div>
 
         <div className="col-lg-3 col-md-3  col-6">
+        <Link to="/detail/interview" style={{color:'black',textDecoration:'none'}}> 
           <div className="card card-inverse card-info text-center">
             <img
               className="moviePosterImg "
@@ -151,9 +165,11 @@ const MoviesList = () => {
               </p>
             </div>
           </div>
+          </Link>
         </div>
 
         <div className="col-lg-3 col-md-3  col-6">
+        <Link to="/detail/johnWick" style={{color:'black',textDecoration:'none'}}> 
           <div className="card card-inverse card-info text-center">
             <img
               className="moviePosterImg "
@@ -173,6 +189,7 @@ const MoviesList = () => {
               </p>
             </div>
           </div>
+          </Link>
         </div>
 
       </div>
