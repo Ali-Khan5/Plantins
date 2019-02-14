@@ -79,18 +79,19 @@ class MoviePage extends Component {
         </div>
         <div className="row">
           <div className="col-md-7 offset-md-1">
-            <div className="videoWrapper" style={{marginTop:'10px'}}>
+
+            <div className="card card-inverse card-primary " style={{marginTop:'15px'}}>
+            <div className="videoWrapper" style={{margin:'5%'}}>
               <iframe
                 width="560"
                 height="315"
                 src={TrailerSource}
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+                allowFullScreen 
+
               />
             </div>
-
-            <div className="card card-inverse card-primary " style={{marginTop:'15px'}}>
               <div className="card-block" style={{padding:'20px'}}>
                 <h5 className="card-title "> Comments </h5>
 

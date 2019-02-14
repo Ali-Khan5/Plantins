@@ -1,5 +1,5 @@
 .HomeUserBackDrop {
-  background-image: url("https://s3-eu-west-1.amazonaws.com/fp-img2/img/web/424677960491042.MH2JqBOMHpEvgWv6Np0j_height64028937732.png");
+  background-image: url("https://ak1.picdn.net/shutterstock/videos/1831691/thumb/1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
@@ -146,3 +146,17 @@ h3 {
   height: 0;
   border:2px solid black;
 }
+
+.jumbotron {
+  background: #358CCE;
+  color: #FFF;
+  border-radius: 0px;
+  }
+  .jumbotron-sm { padding-top: 24px;
+  padding-bottom: 24px; }
+  .jumbotron small {
+  color: #FFF;
+  }
+  .h1 small {
+  font-size: 24px;
+  }

@@ -105,8 +105,8 @@ const Signin = props => {
               <div className="row" style={{ padding: "20px" }}>
                 <div className="col-md-6 col-sm-12">
                   <button
-                    className="btn  btn-light btn-block iconColorOutline"
-                    style={{ padding: "10px", marginTop: "10px" }}
+                    
+                    style={{ padding: "10px", marginTop: "10px" ,  backgroundColor:'green'}}
                     onClick={() => {
                       props.PerformGoogleSignIn();
                     }}
@@ -122,7 +122,7 @@ const Signin = props => {
                       props.PerformFBSignIn();
                     }}
                   >
-                    Login using Facebook
+                   
                   </button>
                 </div>
               </div>

@@ -39,17 +39,18 @@ const Model = props => {
               type="button"
               data-dismiss="modal"
               className="btn  btn-lite  btn-block "
-              style={{ backgroundColor: "#FFFFFF", color: "grey" }}
+              style={{ backgroundColor: "#d62d20", color: "white" }}
               onClick={() => {
                 props.PerformGoogleSignIn();
               }}
-            >
+              >
               Login using Google
             </button>
             <button
               type="button"
               data-dismiss="modal"
               className="btn  btn-outline-primary btn-block "
+              style={{ backgroundColor: "#3b5998 ", color: "white" }}
               onClick={() => {
                 props.PerformFBSignIn();
               }}

@@ -27,7 +27,7 @@ const UserHome = props => {
                     height={"120px"}
                   />
                 ) : (
-                  <img src={PlaceholderICON} width={"120px"} height={"120px"} />
+                  <img style={{borderRadius: '50%'}} src={PlaceholderICON} width={"120px"} height={"120px"} />
                 )}
               </p>
               <h5 className="card-title">{props.CurrentUser.displayname}</h5>

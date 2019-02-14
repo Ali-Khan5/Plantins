@@ -27,9 +27,10 @@ class HeaderFirst extends Component {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Movies,Actors..."
+                  placeholder="Search For Movie & Actors"
                   aria-label="Recipient's username"
                   aria-describedby="basic-addon2"
+                 
                 />
                 <div className="input-group-append">
                   <button className="btn SearchButtonStyling" type="button">
@@ -44,7 +45,7 @@ class HeaderFirst extends Component {
                 data-target="#exampleModal">
               <span
                 style={{
-                  color: "#FF8D1B ",
+                  color: "white",
                   fontSize: "18px",
                   fontWeight: "bold"
                 }}

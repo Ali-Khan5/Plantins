@@ -9,6 +9,7 @@ import Header from './Layout/Header';
 import HeaderOne from './Layout/HeaderFirst';
 import Movie from './components/Movie';
 import Footer from './Layout/Footer';
+import Contact from './components/Contact.js';
 // import Chat from './components/chat';
 
 import history from "./History";
@@ -27,8 +28,9 @@ class Routers extends Component {
 
             <Route exact path="/User" component={UserHome} />
             <Route exact path="/login" component={Signin} />
-            <Route exact path="/contact" component={AboutUs} />
+            {/* <Route exact path="/contact" component={AboutUs} /> */}
             <Route exact path="/about" component={AboutUs} />
+            <Route exact path="/Contact" component={Contact} />
             <Route exact path="/detail/:moviename" component={Movie}/>
             <div className="fl-page-footer-wrap">
               <Footer />
