@@ -111,7 +111,7 @@ class Header extends Component {
   <a  class ='pad' href="#news">Movies</a>
   <a class = 'pad' href="#contact">Actors</a>
   <a class = 'pad' href="#contact">Show Times </a>
-  <a class = 'pad' href="#about">News </a>
+  <a class = 'pad' href="/news">News </a>
   
 </div>
 

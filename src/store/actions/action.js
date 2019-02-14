@@ -1,19 +1,27 @@
 import firebase from "firebase";
 import History from "../../History";
 
-var config = {
+// var config = {
   // apiKey: "AIzaSyBD50M-8ORdMi1c5VmPhT7gGR4yGEkjVcE",
   // authDomain: "paperchatapp.firebaseapp.com",
   // databaseURL: "https://paperchatapp.firebaseio.com",
   // projectId: "paperchatapp",
   // storageBucket: "paperchatapp.appspot.com",
   // messagingSenderId: "269488541938"
-  apiKey: "AIzaSyASyoLLGPKUalwr2MEZr2e-AqEtPmPaAm4",
-  authDomain: "eventplanerapp.firebaseapp.com",
-  databaseURL: "https://eventplanerapp.firebaseio.com",
-  projectId: "eventplanerapp",
-  storageBucket: "eventplanerapp.appspot.com",
-  messagingSenderId: "251484244354"
+  // apiKey: "AIzaSyASyoLLGPKUalwr2MEZr2e-AqEtPmPaAm4",
+  // authDomain: "eventplanerapp.firebaseapp.com",
+  // databaseURL: "https://eventplanerapp.firebaseio.com",
+  // projectId: "eventplanerapp",
+  // storageBucket: "eventplanerapp.appspot.com",
+  // messagingSenderId: "251484244354"
+// };
+var config = {
+  apiKey: "AIzaSyDRF28m54jiKyALkC1OX3YOpm6JAD-PmLg",
+  authDomain: "friedplantainsmovies.firebaseapp.com",
+  databaseURL: "https://friedplantainsmovies.firebaseio.com",
+  projectId: "friedplantainsmovies",
+  storageBucket: "friedplantainsmovies.appspot.com",
+  messagingSenderId: "982575628534"
 };
 firebase.initializeApp(config);
 
@@ -157,6 +165,25 @@ export function changeName(value) {
 //         // dispatch(getAllMsg());
 //     }
 // }
+export function GetAllNews() {
+  let arrayofNews = [];
+  return dispatch => {
+    return firebase.database().ref('/News/').on('value', snapshot => {
+                  const arr = [];
+                  //  console.log(snapshot.val());
+                  // arr.push(snapshot.val());
+                  console.log('getallmsg');
+                  snapshot.forEach(obj=>{
+                    arrayofNews.push( obj.val());
+                  })
+                  console.log(arrayofNews);
+                  dispatch({ type: "GET_NEWS", payload: arrayofNews });
+                });
+                console.log(arrayofNews);
+
+  }
+}
+
 
 var provider = new firebase.auth.FacebookAuthProvider();
 var provider2 = new firebase.auth.GoogleAuthProvider();
