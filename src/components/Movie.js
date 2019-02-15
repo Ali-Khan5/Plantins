@@ -7,67 +7,19 @@ import {
   facebookSignin
 } from "../store/actions/action";
 
+var Movies ; 
 
-var Movies={
-    Antman:{
-        TrailerUrl:'pWdKf3MneyI',
-        Title:'Ant-Man'
-    },
-    infinityWar:{
-        TrailerUrl:'6ZfuNTqbHE8'
-        ,
-        Title:"Marvel's Infinity War"
-    },
-    BohemainRhapsody:{
-        TrailerUrl:'mP0VHJYFOAU',
-        Title:'Bohemian Rhapsody'
-    },
-    ReadyPlayerOne:{
-        TrailerUrl:'cSp1dM2Vj48',
-        Title:'Ready Player One'
-    },
-    MissonImpossibleFallout:{
-        TrailerUrl:'XiHiW4N7-bo',
-        Title:'Misson Impossible: Fallout'
-    },
-    justiceLeague:{
-      TrailerUrl:'r9-DM9uBtVI',
-      title:'Justice League'
-    },
-    whiteHouseDown:{
-      TrailerUrl:'WfaTlmYvTA8',
-      Title:'White House Down'
-    },
-    wonderWomen:{
-      TrailerUrl:'1Q8fG0TtVAY',
-      Title:'Wonder Women'
-    },
-    oceanEight:{
-      TrailerUrl:'MFWF9dU5Zc0',
-      Title:'Ocean"s Eight'
-    },
-    HacksawRidge:{
-      TrailerUrl:'s2-1hz1juBI',
-      Title:' Hacksaw Ridge'
-    },
-    interview:{
-      TrailerUrl:'frsvWVEHowg',
-      Title:'The Interview'
-    },
-    johnWick:{
-      TrailerUrl:'2AUmvWm5ZDQ',
-      Title:'John Wick'
-    }
-}
 
 class MoviePage extends Component {
     constructor(props){
         super(props);
+        Movies = this.props.MOVIES
         this.state={
          
         }
     }
   render() {
+    console.log(this.props)
       let MovieNames=this.props.match.params.moviename;
       let TrailerSource="https://www.youtube.com/embed/"+Movies[MovieNames].TrailerUrl;
     return (
@@ -75,6 +27,7 @@ class MoviePage extends Component {
         <div className="row">
           <div className="col-md-11 offset-md-1" style={{ marginTop: "15px" }}>
             <h3>{Movies[MovieNames].Title}</h3>
+            {console.log(Movies[MovieNames].discription)}
           </div>
         </div>
         <div className="row">
@@ -89,13 +42,17 @@ class MoviePage extends Component {
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen 
-
-              />
+                
+                />
+            </div>
+            <div style={{
+ marginLeft:'3%' , marginRight: '3%'}}>
+                <h6>{Movies[MovieNames].discription}</h6>
             </div>
               <div className="card-block" style={{padding:'20px'}}>
                 <h5 className="card-title "> Comments </h5>
 
-                <div class="form-group">
+                <div className="form-group">
                   <textarea
                     className="form-control"
                     id="exampleFormControlTextarea1"
@@ -122,7 +79,9 @@ class MoviePage extends Component {
 function mapStateToProp(state) {
   return {
     userName: state.reducer.name,
-    CurrentUser: state.reducer.currentUser
+    CurrentUser: state.reducer.currentUser, 
+    MOVIES : state.reducer.MOVIES
+
   };
 }
 function mapDispatchToProp(dispatch) {

@@ -8,12 +8,12 @@ var config = {
   // projectId: "paperchatapp",
   // storageBucket: "paperchatapp.appspot.com",
   // messagingSenderId: "269488541938"
-  apiKey: "AIzaSyASyoLLGPKUalwr2MEZr2e-AqEtPmPaAm4",
-  authDomain: "eventplanerapp.firebaseapp.com",
-  databaseURL: "https://eventplanerapp.firebaseio.com",
-  projectId: "eventplanerapp",
-  storageBucket: "eventplanerapp.appspot.com",
-  messagingSenderId: "251484244354"
+  apiKey: "AIzaSyDRF28m54jiKyALkC1OX3YOpm6JAD-PmLg",
+    authDomain: "friedplantainsmovies.firebaseapp.com",
+    databaseURL: "https://friedplantainsmovies.firebaseio.com",
+    projectId: "friedplantainsmovies",
+    storageBucket: "friedplantainsmovies.appspot.com",
+    messagingSenderId: "982575628534"
 };
 firebase.initializeApp(config);
 
@@ -24,24 +24,49 @@ export function changeName(value) {
   };
 }
 
-// export function getUser() {
+export function getUser() {
+var allUsers= 345
+    firebase.database().ref('/movies').once((data)=>{
+console.log(data)
+    })
 
-//     console.log('am i running?');
-//     let allUsers = [];
-//     firebase.database().ref('/users/').once('value', snapshot => {
-//         console.log(snapshot.val())
-//         let ar = snapshot.val();
-//         for (var x in ar) {
-//             allUsers.push(ar[x]);
-//             History.push('/homepage');
-//         }
+    return { type: 'ALL_USER', payload: allUsers }
 
-//     });
-//     console.log(allUsers);
+}
+// export function MOVIESData() {
+//   return dispatch => {
+//   var data = 'ifs'
+//     firebase.database().ref('/movies').once('value')
+//     .then((data) => {
 
-//     return { type: 'ALL_USER', payload: allUsers }
+
+//     })
+
+//     return { type: 'MOVIES', payload: data }
 
 // }
+// }
+
+export function MOVIESData(daa) {
+  return dispatch => {
+      console.log('getStudentDataByCompany')
+
+      firebase.database().ref('Movies/').once('value')
+      .then((data) => {
+
+              console.log('action')
+              console.log(data.val())
+              let Movies = data.val();
+
+              dispatch({ type: 'MOVIES', payload: Movies })
+
+
+
+
+
+          })
+  }
+}
 
 // export function SignUpFirebase(load) {
 //     // firebase.auth().createUserWithEmailAndPassword(email, password).then(function(user) {
@@ -90,6 +115,8 @@ export function changeName(value) {
 //             });
 //     }
 // }
+
+
 
 // function getCurrentUser(obj) {
 //     let CurrentUser = {

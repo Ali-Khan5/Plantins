@@ -6,10 +6,17 @@ import Gallery from "./AliceSlider";
 import {
   changeName,
   GoogleSignin,
-  facebookSignin
+  facebookSignin , MOVIESData
 } from "../store/actions/action";
 import Carousal from "./carousal";
 class Home extends Component {
+
+  constructor(props) {
+
+    super(props);
+    this.props.MOVIESData()
+
+  }
   render() {
     return (
       <div className="container-fluid">
@@ -65,6 +72,9 @@ function mapDispatchToProp(dispatch) {
   return {
     changeUserName: () => {
       dispatch(changeName());
+    },
+    MOVIESData: () => {
+      dispatch(MOVIESData());
     },
     PerformGoogleSignIn: () => {
       dispatch(GoogleSignin());

@@ -16,6 +16,8 @@ const reducer = (state = initial, action) => {
      
     case "ALL_MSG":
       return { ...state, AllMessages: action.payload };
+    case "MOVIES":
+      return { ...state, MOVIES: action.payload };
   
     default:
       return state;

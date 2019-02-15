@@ -25,6 +25,7 @@ const UserHome = props => {
                     src={props.CurrentUser.userpic}
                     width={"120px"}
                     height={"120px"}
+                    style={{ borderRadius: '50%'}}
                   />
                 ) : (
                   <img style={{borderRadius: '50%'}} src={PlaceholderICON} width={"120px"} height={"120px"} />
