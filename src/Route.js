@@ -10,6 +10,8 @@ import HeaderOne from './Layout/HeaderFirst';
 import Movie from './components/Movie';
 import Footer from './Layout/Footer';
 import Contact from './components/Contact.js';
+import News from "./components/News";
+import FullNews from './components/FullNews';
 // import Chat from './components/chat';
 
 import history from "./History";
@@ -32,6 +34,8 @@ class Routers extends Component {
             <Route exact path="/about" component={AboutUs} />
             <Route exact path="/Contact" component={Contact} />
             <Route exact path="/detail/:moviename" component={Movie}/>
+            <Route exact path="/news" component={News} />
+            <Route exact path="/fullnews/:newstitle" component={FullNews}/>
             <div className="fl-page-footer-wrap">
               <Footer />
             </div>

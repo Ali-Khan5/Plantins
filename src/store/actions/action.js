@@ -184,6 +184,25 @@ export function MOVIESData(daa) {
 //         // dispatch(getAllMsg());
 //     }
 // }
+export function GetAllNews() {
+  let arrayofNews = [];
+  return dispatch => {
+    return firebase.database().ref('/News/').on('value', snapshot => {
+                  const arr = [];
+                  //  console.log(snapshot.val());
+                  // arr.push(snapshot.val());
+                  console.log('getallmsg');
+                  snapshot.forEach(obj=>{
+                    arrayofNews.push( obj.val());
+                  })
+                  console.log(arrayofNews);
+                  dispatch({ type: "GET_NEWS", payload: arrayofNews });
+                });
+                console.log(arrayofNews);
+
+  }
+}
+
 
 var provider = new firebase.auth.FacebookAuthProvider();
 var provider2 = new firebase.auth.GoogleAuthProvider();

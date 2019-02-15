@@ -51,8 +51,8 @@ class Gallery extends React.Component {
             autoPlayInterval={2000}
             autoPlayDirection="rtl"
             autoPlayActionDisabled={true}
-            onSlideChange={this.onSlideChange}
-            onSlideChanged={this.onSlideChanged}
+            // onSlideChange={this.onSlideChange}
+            // onSlideChanged={this.onSlideChanged}
             buttonsDisabled={true}
             dotsDisabled={true}
           >
@@ -60,7 +60,7 @@ class Gallery extends React.Component {
               className="MainSliderHeight MainSliderStyle"
             
             >
-            <Link to="/detail/Ant-man" style={{color:'rgb(248, 248, 248)',textDecoration:'none'}}> 
+            <Link to="/detail/Antman" style={{color:'rgb(248, 248, 248)',textDecoration:'none'}}> 
               <BigSlider
                 imgSrc="https://occhimagazine.com/occhi/wp-content/uploads/2018/07/AMTWPoster-1024x576.jpg"
                 Title={"Ant-Man"}
@@ -141,8 +141,8 @@ class Gallery extends React.Component {
             autoPlayInterval={2000}
             autoPlayDirection="rtl"
             autoPlayActionDisabled={true}
-            onSlideChange={this.onSlideChange}
-            onSlideChanged={this.onSlideChanged} 
+            // onSlideChange={this.onSlideChange}
+            // onSlideChanged={this.onSlideChanged} 
             buttonsDisabled={true}
           >
             <div
