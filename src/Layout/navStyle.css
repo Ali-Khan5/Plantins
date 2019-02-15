@@ -23,6 +23,10 @@ body {
     background-color: black;
     color: white;
   }
+  .nav-item a:hover {
+    background-color: black;
+    color: white;
+  }
   
   .topnav a.active {
     background-color: #4CAF50;
@@ -41,3 +45,23 @@ body {
     border-right: 1px solid white 
     
   }
+
+  li:hover {
+    background-color: black;
+    color: white;
+
+  }
+
+  ul li a {
+    display:block;
+ 
+
+
+   }
+   
+   ul li a:hover, ul li a:focus {
+    color:red; 
+    background-color: #4CAF50;
+
+   }
+  

@@ -55,7 +55,7 @@ class Header extends Component {
 //                 </Link>
 //               </div>
 //             </li>
-//             <li className="nav-item headerNavigationGap">
+//             <li >
 //               <Link className="nav-link" to="#">
 //                 Showtimes
 //               </Link>
@@ -103,9 +103,8 @@ class Header extends Component {
 //         </div>
 //       </nav>
 
-
 // </div>
-<div class="topnav">
+ <div class="topnav">
 <div class='SecDiv'>
   <a class=" pad" href="/">Home</a>
   <a  class ='pad' href="#news">Movies</a>
@@ -115,9 +114,11 @@ class Header extends Component {
   
 </div>
 
-</div>
+</div> 
+
     );
   }
 }
 
 export default Header;
+
